@@ -132,7 +132,7 @@ fn cs(@builtin(global_invocation_id) cell:vec3u)  {
       vant.dir -= .25;
     } else if ( pheremones[ backIndex ] == 1. ) {
       vant.dir += .5;
-    } else if ( pheremones[ diagLeftIndex ] == 1. ) {
+    } /*else if ( pheremones[ diagLeftIndex ] == 1. ) {
       vant.dir += .25;
     } else if ( pheremones[ diagRightIndex ] == 1. ) {
       vant.dir -= .25;
@@ -140,7 +140,7 @@ fn cs(@builtin(global_invocation_id) cell:vec3u)  {
       vant.dir += .5;
     } else if ( pheremones[ diagBackRightIndex ] == 1. ) { //diags nessecary?
       vant.dir -= .5;
-    }
+    }*/ //Might be breaking
   }
 
 
